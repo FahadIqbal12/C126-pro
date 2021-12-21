@@ -40,7 +40,7 @@ uploadImage = async(uri) =>{
         name : filename,
         type: type,
     }
-    data.append("digit", fileToUpload)
+    data.append("alphabet", fileToUpload)
     fetch("http://127.0.0.1:4040",{
         method:'POST',
         body:data,
